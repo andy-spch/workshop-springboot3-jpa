@@ -1,0 +1,35 @@
+[33mcommit a0c45effe334f2ae267949ae9f7426991186b72a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: andy-spch <anderson.sponchiado@discover.com.br>
+Date:   Tue Sep 5 17:37:46 2023 -0300
+
+    Order, Instant, ISO 9001 - Parte 1
+
+[33mcommit 2400d5b317449a5eb895248ce81684bb2046db54[m
+Author: andy-spch <anderson.sponchiado@discover.com.br>
+Date:   Tue Sep 5 15:34:03 2023 -0300
+
+    Service layer, component registration
+
+[33mcommit f8e2646632f9a19482f9b21027a178c9c19a30b8[m
+Author: andy-spch <anderson.sponchiado@discover.com.br>
+Date:   Tue Sep 5 13:44:19 2023 -0300
+
+    JPA repository, dependency injection, database seeding
+
+[33mcommit 4d2a122307b10beb57948e86746c06cbc8ee7bfe[m
+Author: andy-spch <anderson.sponchiado@discover.com.br>
+Date:   Tue Sep 5 11:29:58 2023 -0300
+
+    H2 database, test profile, JPA
+
+[33mcommit 6a81f83f663bce3f60afefdbf9361a3e7cf5754d[m
+Author: andy-spch <anderson.donaruma@gmail.com>
+Date:   Thu Aug 31 16:09:16 2023 -0300
+
+    User entity and resource
+
+[33mcommit 267e6ef3c91d7635636941a79d9d1364b7b3137d[m
+Author: andy-spch <anderson.donaruma@gmail.com>
+Date:   Thu Aug 31 15:31:05 2023 -0300
+
+    Project created

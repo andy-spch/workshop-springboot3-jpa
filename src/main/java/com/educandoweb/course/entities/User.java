@@ -1,10 +1,11 @@
 package com.educandoweb.course.entities;
 
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +16,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_user")
-public class User implements Serializable{
+public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -26,11 +27,15 @@ public class User implements Serializable{
 	private String email;
 	private String phone;
 	private String password;
-
+	
+	// essa configuração do JsonIgnore, é usada no 1 para todos e não no todos para 1. Pois ele retorna as informações básicas desse 1.
+	// dessa forma o retorno do serviço será apenas os dados básicos do cliente. E não os dados totais dos vários pedidos.
+	@JsonIgnore 
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
-	
-	public User() {}
+
+	public User() {
+	}
 
 	public User(Long id, String name, String email, String phone, String password) {
 		this.id = id;
@@ -106,6 +111,5 @@ public class User implements Serializable{
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", phone=" + phone + ", password=" + password
 				+ "]";
 	}
-	
-	
+
 }
